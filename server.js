@@ -14,7 +14,7 @@ const connectDatabase = require('./config/database');
 connectDatabase();
 app.use(express.json());
 app.use(cors({
-    origin:"https://capstone-ecommerce-guvi.netlify.app",
+    origin:"https://warm-paletas-846046.netlify.app/",
     credentials:true,
     methods:['GET', 'POST','PUT', 'DELETE'],
     allowedHeaders:['Content-Type', 'Authorization']
