@@ -16,8 +16,7 @@ app.use(express.json());
 app.use(cors({
     origin:"https://warm-paletas-846046.netlify.app/",
     credentials:true,
-    methods:['GET', 'POST','PUT', 'DELETE'],
-    allowedHeaders:['Content-Type', 'Authorization']
+    
 }));
 
  const server = app.listen(process.env.PORT,() => {
