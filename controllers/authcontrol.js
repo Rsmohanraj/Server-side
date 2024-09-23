@@ -38,7 +38,7 @@ return next(new ErrorHandler('invalid enter email or password', 401));
      }
      sendToken(user,201,res)
 
-     const token = user.getJWtToken();
+     const ticket = user.getJWtToken();
 
      res.status(201).json({
        success: true,
